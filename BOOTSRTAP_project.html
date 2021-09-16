@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Project</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f6edae8f4a.js" crossorigin="anonymous"></script>
+</head>
+<style>
+	.home-bg{background-image: url("Images/cover1.jpeg");
+          background-size:cover;
+          /*opacity: 0.8;*/
+          }
+
+    .home{height: 100vh;
+          background: rgba(0,0,0,0.7);
+          color: white;}
+
+    /*.dev{color: #FFC727;}*/
+
+    .title,.text-color{color: #FFF;}
+
+
+    .service-icon{width: 55px;
+                 border-radius: 100%;
+                 border: 5px solid #FFC727;
+                 padding: 4px;}
+
+
+    .icon{width: 75px;
+          border-radius: 100%;
+          border:5px solid#FFF;
+          padding:5px;
+      }
+
+    .portfolio-img{height: 300px;}
+
+    .progress-text{color:black;}
+
+    .work-bg1{background-image: url("Images/cover2.jpg");
+         background-size: cover;
+         }
+
+    .work-bg{background: rgba(0,0,0,0.6);}
+
+    .nav-link, .navbar-brand{color:white;}
+
+    #navbar{background: black;}
+
+    .card{background: #F5F5F5;
+    	  border-radius: 10px;}
+          /*border-style: double;
+          border-color:#424242;
+          border-width: 7px;*/
+
+    .progress-bar{background: #FFC727;}
+
+    .btn{background: #FFC727;}
+
+
+
+    .card_feature, .card-body,.card-footer{background: #212121; 
+    	                     color: #fff;}
+
+    .card:hover{box-shadow: 0em 1em 1em -0.9em #FFC727;}
+
+    .aboutme{box-shadow: 0 1em 1em -0.8em #FFC727;}
+
+    .nav-link:hover,.navbar-brand:hover{color: #FFC727;}
+
+    body{background-color: #000;
+         }
+</style>
+<body>
+
+	<nav id="navbar" class="navbar navbar-expand-md">
+	  <a class="navbar-brand" href="#">Portfolio</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border: none; color: #FFF;"><i class="fas fa-bars"></i></button>
+	  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">HOME</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">ABOUT</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">SERVICES</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">WORK</a>
+	      </li> 
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">PORTFOLIO</a>
+	      </li> 
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">BLOG</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">CONTACT</a>
+	      </li>       
+	    </ul>
+	  </div>  
+	</nav>
+
+<div class="home-bg">
+	<div class="home d-flex align-items-center flex-wrap pl-5" style="height: 100vh;">
+		
+		<div class="text-center"> 
+			<h1 class="home-title display-2 font-weight-bold text-left">I am Kanchi Rajput</h1>
+			<h1 class="text-left">Developer</h1>
+		</div>
+	</div></div>
+
+
+	<div class="about py-5">
+	
+		<div class="container card p-5 aboutme " style="background: #212121;">
+
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="row">
+					    <div class="col-5">
+							<img src="Images/aboutme.jpeg" width="100%">
+					    </div>
+				   	    <div class="col-7">
+							<p class="text-color"><strong>Name:</strong> Kanchi Rajput</p>
+							<p class="text-color"><strong>Profile:</strong> Full stack developer</p>
+							<p class="text-color"><strong>Email:</strong> kanchirajput26@gmail.com</p>
+							<p class="text-color"><strong>Phone:</strong> 9560076514</p>
+					    </div>
+						<div class="skill container">
+							<h5 class="text-color pt-3"> Skills</h5>
+				   			<h6 class="mt-3 text-color"> PYTHON</h6>
+				   			<div class="progress">
+				   			<div class="progress-bar progress-text" style="width:85%;"> 85%</div></div>
+				  			<h6 class="mt-3 text-color"> DS ALGO</h6>
+				  			<div class="progress">
+				   			<div class="progress-bar progress-text" style="width:80%"> 80%</div></div>
+				   			<h6 class="mt-3 text-color"> HTML</h6>
+				   			<div class="progress">
+				   			<div class="progress-bar progress-text" style="width:95%"> 95%</div></div>
+				  			<h6 class="mt-3 text-color"> CSS</h6>
+				  			<div class="progress">
+				   			<div class="progress-bar progress-text" style="width:90%"> 90%</div></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-6 mt-5 mt-lg-0">
+					<h5 class="text-color"> About me</h5>
+					<p class="text-color">As a teenager at school I was very curious to know about how different technologies work. I took admission in Shiv Nadar University with an ECE major. In my first semester I familiarised myself with the basics of python programming. I did few terminal and GUI projects like; Blood bank Management system, Clipboard, Web Scrapping and Google attendance form automation. Currently i am working on HTML,CSS and Bootstrap.
+                    I aim to strengthen my critical thinking, management and development skills.And I am eager to learn and improve further in my field.<br> When I am not coding, you’ll find me in the gym or exploring different places. </p>
+		        </div>
+	   		</div>
+      	</div>
+	</div>
+
+	<div class="container services text-center py-5">
+		<h2 class="title font-weight-bold ">SERVICES</h2>
+		<p class="title">Lorem ipsum dolor sit amet, consectetur adipisc</p>
+		<hr style="width: 3%; border: 2px solid #FFC727">
+
+	<div class="servicegrid ">
+		<div class="row">
+			<div class="col-lg-4 mt-5 col-sm-6">
+				<div class="card mx-1 p-3 card_feature">
+				<i class="fas fa-briefcase fa-3x my-3" style="color: #FFC727;"></i>
+				<h5> WEB DESIGN</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor odio at augue imperdiet, nec scelerisque eros pretium. Phasellus eget gravida metus. Vivamus pretium lacinia nisl accumsan imperdiet.</p>
+			</div>
+			</div>
+
+			<div class="col-lg-4 mt-5 col-sm-6">
+				<div class="card mx-1 p-3 card_feature">
+				<i class="fas fa-briefcase fa-3x my-3" style="color: #FFC727;"></i>
+				<h5> WEB DEVELOPMENT</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor odio at augue imperdiet, nec scelerisque eros pretium. Phasellus eget gravida metus. Vivamus pretium lacinia nisl accumsan imperdiet.</p>
+			</div>
+			</div>
+
+			<div class="col-lg-4 mt-5 col-sm-6">
+				<div class="card mx-1 p-3 card_feature">
+				<i class="fas fa-briefcase fa-3x my-3" style="color: #FFC727;"></i>
+				<h5> PHOTOGRAPHY</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor odio at augue imperdiet, nec scelerisque eros pretium. Phasellus eget gravida metus. Vivamus pretium lacinia nisl accumsan imperdiet.</p>
+			</div></div>
+
+			
+			<div class="col-lg-4 mt-5 col-sm-6">
+				<div class="card  mx-1 p-3 card_feature">
+				<i class="fas fa-briefcase fa-3x my-3" style="color: #FFC727;"></i>
+				<h5> RESPONSIVE DESIGN</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor odio at augue imperdiet, nec scelerisque eros pretium. Phasellus eget gravida metus. Vivamus pretium lacinia nisl accumsan imperdiet.</p>
+			</div>
+			</div>
+
+			<div class="col-lg-4 mt-5 col-sm-6">
+				<div class="card mx-1 p-3 card_feature">
+				<i class="fas fa-briefcase fa-3x my-3" style="color: #FFC727;"></i>
+				<h5> GRAPHIC DESIGN</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor odio at augue imperdiet, nec scelerisque eros pretium. Phasellus eget gravida metus. Vivamus pretium lacinia nisl accumsan imperdiet.</p>
+			</div>
+			</div>
+
+			<div class="col-lg-4 mt-5 col-sm-6">
+				<div class="card 0 mx-1 p-3 card_feature">
+				<i class="fas fa-briefcase fa-3x my-3" style="color: #FFC727;"></i>
+				<h5> MARKETING SERVICES</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor odio at augue imperdiet, nec scelerisque eros pretium. Phasellus eget gravida metus. Vivamus pretium lacinia nisl accumsan imperdiet.</p>
+			</div></div>
+		</div>
+	</div></div>
+
+<div class="work-bg1">
+<div class="work-bg">
+	<div class="work text-center" >
+		<div class="py-4">
+		<div class="row my-5 py-5">
+			<div class="col-lg-3 col-6">
+				
+				<i class="fas fa-briefcase fa-2x my-3" style="color: white;"></i>
+				<h3 class="title"> 450</h3>
+				<p class="title">WORKS COMPLETED</p>
+			</div>
+
+			<div class="col-lg-3 col-6">
+				<i class="fas fa-briefcase fa-2x my-3" style="color: white;"></i>
+				<h3 class="title"> 25</h3>
+				<p class="title">YEARS OF EXPERIENCE</p>
+			
+			</div>
+
+			<div class="col-lg-3 col-6">
+				
+				<i class="fas fa-briefcase fa-2x my-3" style="color: white;"></i>
+				<h3 class="title"> 550</h3>
+				<p class="title">TOTAL CLIENTS</p>
+			</div>
+
+			<div class="col-lg-3 col-6">
+				
+				<i class="fas fa-briefcase fa-2x my-3" style="color: white;"></i>
+				<h3 class="title">48</h3>
+				<p class="title">AWARD WON</p>
+			</div>
+		</div>
+	</div></div>
+</div></div>
+
+	<div class="portfolio container text-center py-5">
+		<h2 class="title font-weight-bold">PORTFOLIO</h2>
+		<p class="title">Some photo collections are as follows</p>
+		<hr style="width: 3%; border: 2px solid #FFC727">
+
+		<div class="row ">
+			<div class="col-lg-4 mt-5 col-sm-6">
+				<div class="card border-0 mx-1 ">
+					<img class="portfolio-img" src="Images/tiger.jpeg" width="100%">
+					<div class="card-body">
+						<h6>Bengal Tiger</h6>
+						<p> Web design/18 sep 2018</p>
+					</div>
+				</div></div>
+
+
+		 <div class="col-lg-4 mt-5 col-sm-6">
+			<div class="card border-0 mx-1 ">
+				<img class="portfolio-img" src="Images/plane.jpeg" width="100%">
+				<div class="card-body">
+					<h6>Independance Day</h6>
+					<p> Web design/18 sep 2018</p>
+				</div>
+			</div></div>
+
+		<div class="col-lg-4 mt-5 col-sm-6">
+			<div class="card border-0 mx-1">
+				<img class="portfolio-img" src="Images/scenary.jpeg" width="100%">
+				<div class="card-body">
+					<h6>Scenic Beauty</h6>
+					<p> Web design/18 sep 2018</p>
+				</div>
+			</div></div>
+		
+
+		
+			<div class="col-lg-4 mt-5 col-sm-6">
+				<div class="card border-0 mx-1">
+					<img class="portfolio-img" src="Images/water.jpeg" width="100%">
+					<div class="card-body">
+						<h6>Rainwater Droplet</h6>
+						<p> Web design/18 sep 2018</p>
+					</div>
+				</div></div>
+
+
+		 <div class="col-lg-4 mt-5 col-sm-6">
+			<div class="card border-0 mx-1">
+				<img class="portfolio-img" src="Images/squirrel.jpeg" width="100%">
+				<div class="card-body">
+					<h6>Wildlife - squirrel</h6>
+					<p> Web design/18 sep 2018</p>
+				</div></div>
+			</div>
+
+		<div class="col-lg-4 mt-5 col-sm-6">
+			<div class="card border-0 mx-1">
+				<img class="portfolio-img" src="Images/sky.jpeg" width="100%">
+				<div class="card-body">
+					<h6>Scenic Beauty</h6>
+					<p> Web design/18 sep 2018</p>
+				</div>
+			</div>
+	    </div>
+    </div>
+</div>
+
+<div class=" title carousel1 text-center my-5">
+	<h2> TESTIMONIAL</h2>
+	<p class="title">Some photo collections are as follows</p>
+	<hr style="width: 3%; border: 2px solid #FFC727">
+ <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+  </ul>
+    <div class="carousel-inner p-5">
+    	<div class="carousel-item active">
+    		<div class="col-lg-6 offset-lg-3 px-3 text-center">
+    			<img class="rounded-circle mb-4" src="Images/aboutme.jpeg" width="200px">
+    			<h4> John Fredman</h4>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor odio at augue imperdiet</p>
+    		</div>
+    	</div>
+    	<div class="carousel-item">
+    		<div class="col-lg-6 offset-lg-3 px-3 text-center">
+    
+    			<img class="rounded-circle mb-4" src="Images/aboutme.jpeg" width="200px">
+    			<h4> Kanchi Rajput</h4>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor odio at augue imperdiet</p>
+
+    	</div>
+    </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      </a>
+   </div></div></div>
+
+
+   <div class="blog container py-5">
+   	   <h2 class="title font-weight-bold text-center"> BLOG</h2>
+   	   <p class="title text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+   	   <hr style="width: 3%; border: 2px solid #FFC727">
+
+   	    <div class="row ">
+			<div class="col-lg-4 mt-5">
+				<div class="card border-0 mx-1">
+					<img src="Images/bg1.jpg" width="100%">
+					<div class="card-img-overlay text-center">
+					<button type="button" class="btn" style="margin-top:190px;">TRAVEL</button></div>
+					<div class="card-body  pt-4 pb-0">
+						<h6 class="mt-3">See more ideas about Travel</h6>
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor odio at augue imperdiet, nec scelerisque eros pretium. Phasellus eget gravida metus.</p>
+					</div>
+					<div class="card-footer">Kanchi Rajput <span class="float-right">10min</span></div>
+
+				</div>
+			</div>
+
+
+		 <div class="col-lg-4 mt-5">
+			<div class="card border-0 mx-1">
+				<img src="Images/bg1.jpg" width="100%">
+				<div class="card-img-overlay text-center">
+					<button type="button" class="btn" style="margin-top:190px;">WEB DESIGN</button></div>
+				<div class="card-body pt-4 pb-0">
+					<h6 class="mt-3">See more ideas about Travel</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor odio at augue imperdiet, nec scelerisque eros pretium. Phasellus eget gravida metus. </p>
+				</div>
+					<div class="card-footer">Kanchi Rajput <span class="float-right">10min</span></div>
+
+			</div>
+		</div>
+
+		<div class="col-lg-4 mt-5">
+			<div class="card border-0 mx-1">
+				<img src="Images/bg1.jpg" width="100%">
+				<div class="card-img-overlay text-center">
+					<button type="button" class="btn" style="margin-top:190px;">WEB DESIGN</button></div>
+				   <div class="card-body pt-4 pb-0">
+					  <h6 class="mt-3">See more ideas about Travel</h6>
+					   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor odio at augue imperdiet, nec scelerisque eros pretium. Phasellus eget gravida metus.</p>
+
+				</div>
+					<div class="card-footer">Kanchi Rajput <span class="float-right">10min</span></div>
+
+			</div>
+		</div></div></div>
+
+
+
+	<div class="message my-5 py-5" style="background-image: url('Images/carousel.jpg');">
+		<div class="container p-5 " style="background-color: #212121; box-shadow: 0 1em 1em -0.8em #FFC727; border-radius: 10px; ">
+		<div class="row">
+			<div class="col-lg-6">
+				<h3 class="text-color"> Message us at</h3>
+				<hr style="width: 20%; border: 2px solid #FFC727; float:left;">
+				<form class="mt-5">
+			    <div class="form-group ">
+			      
+			      <input type="text" class="form-control" placeholder="Your Name" name="name">
+			    </div>
+			    <div class="form-group">
+			      
+			      <input type="email" class="form-control" placeholder="Your email" name="email">
+			    </div>
+			    <div class="form-group">
+			      
+			      <input type="text" class="form-control" placeholder="Subject" name="subject">
+			    </div>
+			    
+			    <div class="form-group">
+			      
+			      <textarea type="text" class="form-control" placeholder="Message" name="message"></textarea>
+			    </div>
+			    
+			    <center><button type="submit" class="btn" style="border-radius: 20px;">Send Message</button></center>
+			  </form>
+			</div>
+			<div class="col-lg-6 mt-5 mt-lg-0">
+			    <h3 class="text-color"> Get in Touch</h3>
+				<hr style="width: 20%; border: 2px solid #FFC727; float:left;">
+				<p class="mt-5 text-color"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor odio at augue imperdiet, nec scelerisque eros pretium. Phasellus eget gravida metus.</p>
+				<p class="text-color"> House no 349 HBH colony</p>
+				<p class="text-color"> 9560076514</p>
+				<p class="text-color"> kanchirajput26@gmail.com</p>
+
+				 
+			</div>
+		</div>
+	</div></div>
+
+
+</body>
+</html>
